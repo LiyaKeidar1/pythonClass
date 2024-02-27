@@ -1,0 +1,32 @@
+{
+    "54321": {
+        "company": "Ford",
+         "model": "Mustang",
+        "license_plate": 54321,
+        "color": "Yellow",
+        "engine": "V8",
+        "mileage": 25000.8,
+        "current_owner": "Robert Johnson",
+        "price": 30000.0
+    },
+    "67890":{
+    "company": "Honda",
+    "model": "Civic",
+    "license_plate": 67890,
+    "color": "Red",
+    "engine": "Inline-4",
+    "mileage": 35000.2,
+    "current_owner": "Jane Smith",
+    "price": 18000.0
+},
+    "12345" :{
+    "company": "Toyota",
+    "model": "Camry",
+    "license_plate": 12345,
+    "color": "Blue",
+    "engine": "V6",
+    "mileage": 50000.5,
+    "current_owner": "John Doe",
+    "price": 20000.0
+}
+}
