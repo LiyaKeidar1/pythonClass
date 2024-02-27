@@ -1,0 +1,7 @@
+ITERATORS AND GENERATORS
+
+ITERABLE is a type that has the dandor __iter__() method.
+When calling the for loop python creates an ITERATOR that runs through the iterable's values.
+Has a __next__() method. ITERATOR is an object with a state do that it remembers where it is.
+**  pay close attention to the difference between iterator and iterable!
+    iterator is the pointer and iterable is the list-like object.

@@ -1,0 +1,97 @@
+     CLASSES AND INHERITANCE:
+super().__init__()-- the sons classes use the fathers class constructor for building the object.
+
+
+     WORKING WITH FILES:
+open() -- class that creates object:
+option:
+(r) - read
+(w) - write
+(a) - append at the end of the file
+(r+)- read and write at the beginning of the file.
+(w+)- read the write - override
+
+open() -- opens the object for different use options
+close() -- close the object that uses the file
+closed -- returns whether
+example:
+- objname = open("file_name", "option")
+
+for line in text_file: -- uses text_file as an iterable with its lines
+    print(line)
+
+text_file.read() -- returns a string of the text file
+
+text_file.readline()-- reads a whole line, returns a string of the line the pointer is on.
+                       Can also input a number that represents characters. The pointer moves to the end of string after returning it.
+
+with open('doc.txt', option) as read_file: -- opens the file in a specific area (and closes it) for different uses.
+
+     JSON:
+Two functions: Load-- JSON to dictionary
+               Dump-- dictionary to JSON- (to string)
+
+ Convert JSON string to dictionary:
+data_dict = json.loads(data_JSON)
+
+ Get a JSON formatted string:
+client_JSON = json.dumps(client)
+
+    DECORATORS:
+a few functions one inside the other in order to group a few functions together.
+example for two common decorator:
+@staticmethod- no need for "self"-- no need for an object but could perform the function on one. When we want a function to be in a certain class- for organization purposes.
+@classmethod- an action performed on a class and not an object. for example, creating an object from a string and not variables.
+
+    ERRORS AND EXCEPTIONS:
+try and except: try the code below and jump to the exception in case of a risen error.
+type of errors: ValueError, ZeroDivisionError, Exception (general)
+** finally: goes there after return in a function.
+raise Exception: act as though a certain part of a code (to my choice) is an error
+
+    LOGGING
+import logging
+logging.basicConfig(level= logging.INFO, ERROR, DEBUG, WARNING, CRITICAL)-- level of what logs show when running the code
+
+    SYS MODULES
+sys.argv- known flags saved under argv (-f, -p, etc..)
+sys.version- what version of python Im running on
+sys.path- path of files
+sys.platform - tells you what system you're on
+
+    OS MODULES
+os.path
+
+    THREADING
+A thread of execution is defined in computer science as the smallest unit that
+can be scheduled in an operating system, can run on the same process and exist on the same time.
+
+    threading.start()
+    threading.join()- wait for the thread to finish and then continue
+    threading.Lock()- creating a lock that can be acquired on a piece of code meaning
+    I can use one thread at a time on this certain piece of code.
+        -lockname.acquired()
+        -lockname.release()
+
+Threading.thread(target= piece of code, args= (x,..)...)
+In Threading.Thread() we can input:
+- target-- piece of code
+- args-- arguments are used as input to the target piece of code
+
+    PROCESS MODULES
+import multiprocessing
+multiprocessing.current_process()
+multiprocessing.Process(target= ..., args=..., )
+
+exchanging data between processes: Queue, Pipe
+
+pool- how many processes will do the job.
+
+subprocess.call("dir *.py"
+
+    REQUESTS VS SESSIONS
+pip install requests.
+REQUESTS- single request, stateless by default
+          EX: request.post(), request.get(), request.put()
+SESSION- connecting server with client for a set of requests, stateful.
+          EX: request.session()
